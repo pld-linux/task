@@ -38,3 +38,4 @@ pakiety mo¿na usun±æ po instalacji.
 rm -rf $RPM_BUILD_ROOT
 
 %files gui-kde
+%defattr(644,root,root,755)
