@@ -32,8 +32,9 @@ wymagaj± dodatkowych, nieprzydatnych dla wiêkszo¶ci u¿ytkowników,
 pakietów jak wireless-tools lub dzia³aj± jako demony). Niepotrzebne
 pakiety mo¿na usun±æ po instalacji.
 
-%files gui-kde
+%prep
 
 %clean
-rm -rf $RPM_BUILD_ROOTclean
 rm -rf $RPM_BUILD_ROOT
+
+%files gui-kde
