@@ -1,12 +1,10 @@
 Summary:	The metapackages for PLD
 Summary(pl):	Metapakiety dla PLD.
 Name:		task
-Version:	1.1	
+Version:	20040214
 Release:	1
 License:	GPL
 Group:		Base
-Provides:	-
-Obsoletes:	-
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -16,53 +14,26 @@ Metapackages for PLD.
 Metapakiety dla PLD.
 
 %package gui-kde
-Summary:	
-Summary(pl):	-
-Group:		-
+Summary:	KDE metapackage for PLD.
+Summary(pl):	Metapakiet z KDE dla PLD.
+Group:		X11/Window Managers
+Version:	3.2.0
+Release:	1
 
-%description subpackage
+%description gui-kde
+This metapackage will install all KDE packages in PLD (even those that 
+require additional not really useful for most users packages like 
+wireless-tools or run as deamons). You are welcome to remove non needed 
+packages after the installation.
 
-%description subpackage -l pl
+%description gui-kde -l pl
+Ten metapakiet zainstaluje wszystkie pakiety KDE, nawet te, które 
+wymagaj± dodatkowych, nieprzydatnych dla wiêkszo¶ci u¿ytkowników, 
+pakietów jak wireless-tools lub dzia³aj± jako demony). Niepotrzebne 
+pakiety mo¿na usun±æ po instalacji.
 
-%prep
-%setup -q -n %{name}-%{version}.orig -a 1
-%patch0 -p1
-
-%build
-%{__gettextize}
-%{__aclocal}
-%{__autoconf}
-%{__autoheader}
-%{__automake}
-%configure
-%{__make}
-
-%install
-rm -rf $RPM_BUILD_ROOT
-# create directories if necessary
-#install -d $RPM_BUILD_ROOT
-
-%{__make} install \
-	DESTDIR=$RPM_BUILD_ROOT
+%files gui-kde
 
 %clean
+rm -rf $RPM_BUILD_ROOTclean
 rm -rf $RPM_BUILD_ROOT
-
-%pre
-
-%post
-
-%preun
-
-%postun
-
-%files
-%defattr(644,root,root,755)
-%doc AUTHORS CREDITS ChangeLog NEWS README THANKS TODO
-%attr(755,root,root) %{_bindir}/*
-%{_datadir}/%{name}
-
-%files subpackage
-%defattr(644,root,root,755)
-%doc extras/*.gz
-%{_datadir}/%{name}-ext
