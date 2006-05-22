@@ -23,7 +23,7 @@ Release:	1
 %description gui-kde
 This metapackage will install all KDE packages in PLD (even those that
 require additional not really useful for most users packages like
-wireless-tools or run as deamons). You are welcome to remove non needed
+wireless-tools or run as daemons). You are welcome to remove non needed
 packages after the installation.
 
 %description gui-kde -l pl
