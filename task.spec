@@ -1,5 +1,5 @@
 Summary:	The metapackages for PLD
-Summary(pl.UTF-8):   Metapakiety dla PLD
+Summary(pl.UTF-8):	Metapakiety dla PLD
 Name:		task
 Version:	20040214
 Release:	1
@@ -15,7 +15,7 @@ Metapakiety dla PLD.
 
 %package gui-kde
 Summary:	KDE metapackage for PLD
-Summary(pl.UTF-8):   Metapakiet z KDE dla PLD
+Summary(pl.UTF-8):	Metapakiet z KDE dla PLD
 Group:		X11/Window Managers
 Version:	3.2.0
 Release:	1
