@@ -1,5 +1,5 @@
 Summary:	The metapackages for PLD
-Summary(pl):	Metapakiety dla PLD
+Summary(pl.UTF-8):   Metapakiety dla PLD
 Name:		task
 Version:	20040214
 Release:	1
@@ -10,12 +10,12 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Metapackages for PLD.
 
-%description -l pl
+%description -l pl.UTF-8
 Metapakiety dla PLD.
 
 %package gui-kde
 Summary:	KDE metapackage for PLD
-Summary(pl):	Metapakiet z KDE dla PLD
+Summary(pl.UTF-8):   Metapakiet z KDE dla PLD
 Group:		X11/Window Managers
 Version:	3.2.0
 Release:	1
@@ -26,11 +26,11 @@ require additional not really useful for most users packages like
 wireless-tools or run as daemons). You are welcome to remove non needed
 packages after the installation.
 
-%description gui-kde -l pl
-Ten metapakiet zainstaluje wszystkie pakiety KDE, nawet te, które
-wymagaj± dodatkowych, nieprzydatnych dla wiêkszo¶ci u¿ytkowników,
-pakietów jak wireless-tools lub dzia³aj± jako demony). Niepotrzebne
-pakiety mo¿na usun±æ po instalacji.
+%description gui-kde -l pl.UTF-8
+Ten metapakiet zainstaluje wszystkie pakiety KDE, nawet te, ktÃ³re
+wymagajÄ… dodatkowych, nieprzydatnych dla wiÄ™kszoÅ›ci uÅ¼ytkownikÃ³w,
+pakietÃ³w jak wireless-tools lub dziaÅ‚ajÄ… jako demony). Niepotrzebne
+pakiety moÅ¼na usunÄ…Ä‡ po instalacji.
 
 %prep
 
